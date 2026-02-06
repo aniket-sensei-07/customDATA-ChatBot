@@ -1,0 +1,7 @@
+# requirements.txt
+streamlit==1.54.0
+pandas>=1.5,<3
+langchain
+langchain-openai
+langchain-experimental
+python-dotenv
