@@ -24,7 +24,7 @@ def main():
             llm,
             user_csv,
             verbose=True,
-            allow_dangerous_code=True  # 👈 REQUIRED
+            allow_dangerous_code=True
         )
 
         if user_question:
@@ -32,4 +32,5 @@ def main():
             st.write(response)
 
 if __name__ == "__main__":
+
     main()
