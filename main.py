@@ -6,13 +6,13 @@ from langchain_experimental.agents import create_csv_agent
 def main():
     load_dotenv()
 
-    st.set_page_config(page_title="Ask CSV")
-    st.header("Ask CSV 📊")
+    st.set_page_config(page_title="Ask")
+    st.header("Ask 📊")
 
-    user_csv = st.file_uploader("Upload your CSV", type="csv")
+    user_csv = st.file_uploader("Upload your data(CSV)", type="csv")
 
     if user_csv is not None:
-        user_question = st.text_input("Ask a question about your CSV")
+        user_question = st.text_input("Ask a question about your data.")
 
         llm = ChatGroq(
             temperature=0,
@@ -32,3 +32,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
